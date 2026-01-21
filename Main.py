@@ -1,15 +1,41 @@
+#TODO add UI
 
-def calculator(a, b, operation):
-    if operation == 'add':
-        return a + b
-    elif operation == 'subtract':
-        return a - b
-    elif operation == 'multiply':
-        return a * b
-    elif operation == 'divide':
-        if b != 0:
-            return a / b
-        else:
-            return "Error: Division by zero"
+def add(a, b):
+    pass
+
+def subtract(a, b):
+    pass
+
+def divide(a, b):
+    pass
+
+def multiply(a, b):
+    pass
+
+
+def operation(op, a, b):
+    if op == '+':
+        return add(a, b)
+    elif op == '-':
+        return subtract(a, b)
+    elif op == '*':
+        return multiply(a, b)
+    elif op == '/':
+        return divide(a, b)
+    
+
+ans = None
+while True:
+    
+    if ans != None:
+        first_num = ans
+        second_num = float(input("Enter number: "))
+        ans = operation(input("Enter operation (+, -, *, /): "), first_num, second_num)
     else:
-        return "Error: Unknown operation"
+        first_num = float(input("Enter first number: "))
+        second_num = float(input("Enter second number: "))
+        ans = operation(input("Enter operation (+, -, *, /): "), first_num, second_num)
+
+    print(f"Result: {ans}")
+
+
