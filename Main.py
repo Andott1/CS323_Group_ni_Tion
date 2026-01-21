@@ -32,7 +32,7 @@ def divide(a, b):
     return a / b 
 
 def multiply(a, b):
-    pass
+    return a * b
 
 
 def operation(op, a, b):
