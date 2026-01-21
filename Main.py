@@ -21,7 +21,7 @@ class Calculator(QMainWindow):
         print(num)
 
 
-#Test commit 
+#Test again
 def add(a, b):
     return a + b
 
