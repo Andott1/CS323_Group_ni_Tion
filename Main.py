@@ -53,8 +53,6 @@ def divide(a, b):
     return a / b 
 
 def multiply(a, b):
-    if b == 0:
-        return "cannot divide by 0"
     return b * a
 
 
